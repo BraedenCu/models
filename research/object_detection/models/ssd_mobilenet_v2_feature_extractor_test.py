@@ -56,7 +56,7 @@ class SsdMobilenetV2FeatureExtractorTest(
     if use_keras:
       return (ssd_mobilenet_v2_keras_feature_extractor.
               SSDMobileNetV2KerasFeatureExtractor(
-                  is_training=False,
+                  is_training=True,
                   depth_multiplier=depth_multiplier,
                   min_depth=min_depth,
                   pad_to_multiple=pad_to_multiple,
